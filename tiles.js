@@ -93,10 +93,10 @@ Object.defineProperty(Object.prototype, "board", {
 						if (ok) {
 							cur += eval(i, [...visited, ind], [...blacklist, ...ids])[0] + 1;
 
-							if (nhidden(latest_board[ind].layers) === nl - ids.length) {
-								cur += 0.001;
-							}
 							if (nhidden(latest_board[i].layers) === nl - ids.length) {
+								cur += 2.002;
+							}
+							if (nhidden(latest_board[ind].layers) === nl - ids.length) {
 								cur += 0.001;
 							}
 						}
